@@ -1,0 +1,74 @@
+<main>
+    <h1>CRIANDO COMPONENTE</h1>
+    <section id="container-grid">
+        <app-card></app-card>
+    </section>    
+
+    <h1>COMPARTILHAMENTO DE DADOS ENTRE COMPONENTES</h1>
+    <section id="container-grid">
+        <app-parent-data [user]="users[0]"></app-parent-data>
+        <app-parent-data [user]="users[1]"></app-parent-data>
+    </section>
+
+    <h1>DIRETIVAS</h1>
+    <section id="container-grid">
+        <app-directives></app-directives>
+    </section>
+
+    <h1>RENDERIZAÇÃO CONDICIONAL</h1>
+    <section id="container-grid">
+        <app-if-render></app-if-render>
+    </section>
+
+    <h1>Eventos</h1>
+    <section id="container-grid">
+        <app-eventos></app-eventos>
+    </section>
+
+    <h1>Emitindo eventos</h1>
+    <section id="container-grid">
+        <app-emitter></app-emitter>
+    </section>
+
+    <h1>Teste de Evento=> father > son</h1>
+    <section id="container-grid">
+        <app-father></app-father>
+    </section>
+
+    <h1>Renderização de listas</h1>
+    <section id="container-grid">
+        <app-listas></app-listas>
+    </section>
+
+    <h1>Pipe Operator</h1>
+    <section id="container-grid">
+        <app-pipe-operator></app-pipe-operator>
+    </section>
+
+    <h1>Two way data binding</h1>
+    <section id="container-grid">
+        <app-data-binding></app-data-binding>
+    </section>
+
+    <h1>NF Form</h1>
+    <section id="container-grid">
+        <app-form></app-form>
+    </section>
+
+    <h1>Services</h1>
+    <section id="container-grid">
+        <app-generate-list></app-generate-list>
+    </section>
+
+    <h1>Rotas</h1>
+    <section id="container-grid" [ngStyle]="{'flex-direction': 'column' }">
+        <router-outlet>
+            <nav>
+                <a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+                <a [routerLink]="['/list']" routerLinkActive="router-link-active">Listas</a>
+            </nav>
+        </router-outlet>
+    </section>
+</main>
+
+

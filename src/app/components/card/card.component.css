@@ -1,0 +1,9 @@
+#label-group{
+    display: flex;
+    font-size: 1.2em;
+}
+
+label{
+    font-weight: 600;
+    margin-right: 6px;
+}

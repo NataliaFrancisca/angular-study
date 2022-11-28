@@ -1,0 +1,47 @@
+<form>
+    <label>
+        Digite o nome da música:
+        <input type="text" required [(ngModel)]="nome" name="nome"/>
+    </label>
+
+    <label>
+        Digite o nome do artista:
+        <input type="text" required [(ngModel)]="artista" name="artista" />
+    </label>
+
+    <label>
+        Digite o nome do album:
+        <input type="text" required [(ngModel)]="nomeAlbum" name="nomeAlbum" />
+    </label>
+
+    <label>
+        Digite o ano de lançamento:
+        <input type="number" required [(ngModel)]="anoLancamento" name="anoLancamento"/>
+    </label>
+
+    <label>
+        Favoritar a música?
+        <label>
+            Sim
+            <input type="radio" value="true" name="favorite-song" [(ngModel)]="favoritarMusica" normalize="normalizeInput()"/>
+        </label>
+
+        <label>
+            Não
+            <input type="radio" value="false" name="favorite-song" [(ngModel)]="favoritarMusica" normalize="normalizeInput()" />
+        </label>
+    </label>
+
+    <input type="submit" value="Salvar" (click)="salvarDados()"/>
+</form>
+
+
+<section *ngIf="musicas.length > 0" id="lista-musicas">
+    <h2>Mostra as músicas:</h2>
+
+    <ul>
+        <li *ngFor="let musica of musicas">
+            {{musica.nomeMusica}}
+        </li>
+    </ul>
+</section>

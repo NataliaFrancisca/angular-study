@@ -1,0 +1,16 @@
+div{
+    margin: 10px 0;
+    border: solid black 3px;
+    padding: 10px;
+    background-color: pink;
+
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: orangered;
+}

@@ -1,0 +1,8 @@
+<p>data-binding works!</p>
+
+<form>
+    <input type="text" [(ngModel)]="name" name="name" placeholder="Digite o seu nome" />
+    <input type="submit" value="Enviar" />
+</form>
+
+<p *ngIf="name != '' ">O nome do fulano é: {{name}}</p>

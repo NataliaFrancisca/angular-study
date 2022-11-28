@@ -1,0 +1,22 @@
+button{
+    background-color: pink;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.counter p{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.counter button{
+    cursor: pointer;
+    border-radius: 4px;
+}
